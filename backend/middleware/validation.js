@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 
 require('dotenv').config();
 
+//Validation helper
 module.exports = (req, res, next) => {
   if (req.method === 'OPTIONS') {
     return next();
