@@ -2,10 +2,11 @@ const express = require('express');
 const { check } = require('express-validator');
 
 const carsControllers = require('../controllers/cars-controllers');
+//Image upload helper
 const fileUpload = require('../middleware/file-upload');
 const router = express.Router();
 
-//Post car route
+//Add new car route
 router.post('/',
     fileUpload.single('image'),
     [
@@ -23,7 +24,7 @@ router.post('/',
 router.get('/', carsControllers.getAllCars);
 //Get by Id
 router.get('/:id', carsControllers.getCarById);
-//Offers Cars
+//Offers Cars - landing page top cars
 router.get('/offers/cars', carsControllers.getOfferCars);
 //Sort by Name/Model
 router.get('/sort/:name', carsControllers.getCarByName);
