@@ -4,6 +4,7 @@ const { check } = require('express-validator');
 const usersController = require('../controllers/users-controllers');
 const router = express.Router();
 
+//Register new user
 router.post('/register',
     [
         check('name', 'Please provide a name').not().isEmpty().isLength({ min: 4 }).trim(),
@@ -13,6 +14,7 @@ router.post('/register',
     usersController.registerUser
 );
 
+//Login a user
 router.post('/login',
     [
         check('email', 'Please provide an email').isEmail().not().isEmpty().isLength({ min: 6 }).normalizeEmail(),
@@ -21,6 +23,7 @@ router.post('/login',
     usersController.loginUser
 );
 
+//Change user password
 router.post('/update',
     [
         check('password', 'Password at least 6 character long').isLength({ min: 6 }).trim()
