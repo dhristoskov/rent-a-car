@@ -7,6 +7,7 @@ const PasswordField = (props) => {
 
     const [ unVisible, setUnVisible ] = useState(true);
 
+    //Toggle between password and text so password is visible or not
     const toggleVisibal = () => {
         setUnVisible(prevState => !prevState);
     }
