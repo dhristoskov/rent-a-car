@@ -76,7 +76,7 @@ const getOfferCars = async ( req, res ) => {
 }
 
 
-//Get car list by searched name or model
+//Get car list by searched name,model or car type
 const getCarByName = async ( req, res ) => {
 
     let cars
