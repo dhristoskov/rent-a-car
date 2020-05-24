@@ -19,6 +19,7 @@ const Register = (props) => {
 
     const { name, email, password, password2 } = registerUser;
 
+    //onChange + input validation
     const onHandleChange = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
@@ -27,6 +28,7 @@ const Register = (props) => {
         setRegisterUser({...registerUser, [name]: value})
     };
 
+    //Check password and password2 and submit date
     const onHandleSubmit = (e) => {
         e.preventDefault();
         if(password !== password2){
@@ -42,6 +44,7 @@ const Register = (props) => {
         };
     };
 
+    //Gsap entry animaion
     useEffect(() => {
         let tl = gsap.timeline();
         tl.from(authForm, 1.5, {scale: 0.5, opacity: 0})
