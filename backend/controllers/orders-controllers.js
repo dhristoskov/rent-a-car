@@ -8,7 +8,7 @@ const Order = require('../models/order');
 const Car = require('../models/car');
 const User = require('../models/user');
 
-//Create new Order
+//Create new Order entry
 const addOrder = async ( req, res ) => {
     const errors = validationResult(req);
     if(!errors.isEmpty()){
@@ -81,6 +81,7 @@ const addOrder = async ( req, res ) => {
     res.status(201).json({ order: order });
 };
 
+//Get all users order
 const getUsersOrders = async ( req, res ) => {
 
     let orderByUser
@@ -115,6 +116,7 @@ const getOrderById = async ( req, res ) => {
     res.json({order: orderById.toObject({ getters: true}) });
 };
 
+//Delete order
 const deleteOrder = async ( req, res ) => {
 
     let orederToDelete
@@ -148,6 +150,7 @@ const deleteOrder = async ( req, res ) => {
         res.status(200).json({msg: 'Order Deleted.'});
 };
 
+//Update single order price
 const updatePayOption = async ( req, res ) => {
 
     const { isPayNow } = req.body;
@@ -164,10 +167,12 @@ const updatePayOption = async ( req, res ) => {
         return res.status(404).json({ msg: 'Could not find order for this id' });
     }
 
+    //Fixed price field where we save old price
     let fixedPrice = orderToUpdate.fixedPrice;
     let newTotalPrice = orderToUpdate.totalPrice;
     try{
         if(isPayNow){
+            //10% off the price when pay now
             orderToUpdate.totalPrice = (newTotalPrice - (newTotalPrice/100) * 10);
         }else{
             orderToUpdate.totalPrice = fixedPrice;
@@ -182,6 +187,7 @@ const updatePayOption = async ( req, res ) => {
     res.status(200).json({ order: orderToUpdate.toObject({ getters: true }) });
 };
 
+//Create PDF on checkout
 const pdfInvoice = async ( req, res ) => {
     
     let order;
