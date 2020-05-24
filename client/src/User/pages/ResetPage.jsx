@@ -19,12 +19,14 @@ const ResetPage = (props) => {
 
     const { email } = emailToReset
 
+    //Gsap entry animation
     useEffect(() => {
         tl.current = gsap.timeline();
         tl.current.fromTo(authForm, 1.5, {scale: 0.5, opacity: 0}, {scale: 1, opacity: 1})
                   .from(settings, 1, {y: 20, opacity: 0}, 0.5)
     }, [tl]);
 
+    //onCahnge + validate input
     const onHandleChange = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
@@ -33,6 +35,7 @@ const ResetPage = (props) => {
         setEmail({...emailToReset, [name]: value})
     };
 
+    //post new email to db
     const onSubmitHandler = (e) => {
         e.preventDefault();
             axios.post('/emails/reset', emailToReset, 
