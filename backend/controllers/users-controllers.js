@@ -5,6 +5,7 @@ const { validationResult } = require('express-validator');
 const User = require('../models/user');
 require('dotenv').config();
 
+//Register new user
 const registerUser = async ( req, res ) => {
     const errors = validationResult(req);
     if(!errors.isEmpty()){
@@ -63,7 +64,7 @@ const registerUser = async ( req, res ) => {
     res.status(201).json({userId: user.id, name: user.name, token: token});
 };
 
-
+//Login user
 const loginUser = async ( req, res ) => {
     const errors = validationResult(req);
     if(!errors.isEmpty()){
@@ -109,6 +110,7 @@ const loginUser = async ( req, res ) => {
     res.json({userId: user.id, name: user.name, token: token});
 };
 
+//Update users password
 const updateUserPassword = async ( req, res ) => {
 
     const { password, token } = req.body;
