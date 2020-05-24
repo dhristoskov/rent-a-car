@@ -15,6 +15,7 @@ const Auth = () => {
     const [isLoading, setIsLoadin] = useState(false);
     const history = useHistory()
 
+    //Register new user post new user data to db
     const onRegisterHandler = useCallback((user) => {
         setIsLoadin(true);
         axios.post('/users/register', user, 
@@ -29,6 +30,7 @@ const Auth = () => {
              });
     }, [history, login]);
 
+    //Login user - post data to db
     const onLoginHandler = useCallback((user) => {
         setIsLoadin(true);
         axios.post('/users/login', user, 
