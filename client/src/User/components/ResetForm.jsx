@@ -22,6 +22,7 @@ const ResetForm = () => {
         token: token
     });
 
+    //Gsap entry animation
     useEffect(() => {
         let tl = gsap.timeline();
         tl.from(authForm, 1.5, {scale: 0.5, opacity: 0})
@@ -29,6 +30,7 @@ const ResetForm = () => {
 
     const { password, password2 } = reset;
 
+    //onChange + input validation
     const onHandleChange = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
@@ -37,6 +39,7 @@ const ResetForm = () => {
         setReset({...reset, [name]: value});
     };
 
+    //Check password and password2 - post new password and token to db
     const onHandleSubmit = (e) => {
         e.preventDefault();
         if(password !== password2){
