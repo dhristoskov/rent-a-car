@@ -12,6 +12,7 @@ const transport = nodemailer.createTransport(sendgridTransport({
     }
 }))
 
+//Send invoice by checkout
 const sendInvoiceEmail = async ( req, res ) => {
 
     const { orderId } = req.body
@@ -69,12 +70,14 @@ const sendInvoiceEmail = async ( req, res ) => {
     }
 }
 
+//Send reset passowrd link
 const resetPassword = async ( req, res ) => {
     const errors = validationResult(req);
     if(!errors.isEmpty()){
         return res.status(422).json({ msg: 'Invalid input, please check your data' });
     }
     
+    //Generate token
     let token
     crypto.randomBytes(32, (err, buffer) => {
         if(err){
@@ -97,6 +100,7 @@ const resetPassword = async ( req, res ) => {
 
     try{
         user.resetToken = token;
+        //1h time exp time for generated token
         user.expToken = Date.now() + 3600000;
         await user.save();
     }catch(err){
