@@ -19,6 +19,7 @@ const Login = (props) => {
 
     const { email, password } = loginUser;
 
+    //on input change + input validation
     const onHandleChange = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
@@ -27,6 +28,7 @@ const Login = (props) => {
         setLoginUser({...loginUser, [name]: value})
     };
 
+    //Submit changes
     const onHandleSubmit = (e) => {
         e.preventDefault();
         props.onLoginHandler(loginUser);       
@@ -36,6 +38,7 @@ const Login = (props) => {
         });
     };
 
+    //Gsap entry animation
     useEffect(() => {
         tl.current = gsap.timeline();
         tl.current.fromTo(authForm, 1.5, {scale: 0.5, opacity: 0}, {scale: 1, opacity: 1})
