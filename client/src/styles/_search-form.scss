@@ -1,0 +1,49 @@
+.search-form {
+    margin: auto;
+    width: 950px;
+    form {
+        text-align: center;
+        width: 100%;
+        input[type=text],
+        input[type=submit]{
+            padding: 10px;
+            border: 1px solid black;
+            outline: none;
+        }
+        input[type=text]{
+            width: 80%;
+        }
+        input[type=submit]{
+            width: 20%;
+            cursor: pointer;
+            background-color: transparent;
+            text-transform: uppercase;
+        }
+        .clear-search{
+            width: 20%;
+            cursor: pointer;
+            background-color: transparent;
+            text-transform: uppercase;
+            padding: 10px;
+            border: 1px solid black;
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .search-form {
+        width: 90%;
+        form {
+            input[type=text]{
+                width: 70%;
+            }
+            input[type=submit]{
+                width: 30%;
+            }
+            .clear-search{
+                width: 30%;
+            }
+        }
+    }
+}

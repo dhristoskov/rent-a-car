@@ -1,0 +1,63 @@
+.main-header {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    .logo-field{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+            .logo {
+                font-size: 25px;
+            }
+            .menu {
+                cursor: pointer;
+                margin-right: 35px;
+                width: 25px;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    width: 35px;
+                }
+                p {
+                    height: 3px;
+                    width: 100%;
+                    background-color: black;
+                    margin-bottom: 2px;                            
+                }
+            }
+        }
+    .company-ident{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .auth-btn{
+                font-size: 15px;
+                text-transform: uppercase;
+                margin-right: 15px;  
+                cursor: pointer;         
+                a {
+                    text-decoration: none;
+                    color: black;          
+                }
+            }    
+            .bulb {
+                font-size: 18px;
+                border: none;
+                background: transparent;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;                            
+            }           
+    }
+}
+
+@media (max-width: 420px) {
+    .main-header {
+        padding: 10px 10px 10px 25px;
+        & .logo {
+            width: 80px;
+            height: auto;
+        }
+    }
+}

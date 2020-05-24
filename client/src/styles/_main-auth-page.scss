@@ -1,0 +1,15 @@
+.main-auth {
+    .settings{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;      
+        font-size: 22px;  
+        span {
+            font-size: 16px;
+            margin-left: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}

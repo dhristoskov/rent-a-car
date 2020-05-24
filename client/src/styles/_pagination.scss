@@ -1,0 +1,23 @@
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    & p {
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    & .page-number{
+        list-style: none;
+        margin-right: 5px;
+        & button {
+            padding: 10px;
+            font-size: 16xp;
+            font-weight: 700;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;      
+    font-size: 22px;  
+    cursor: pointer;
+    span {
+        font-size: 16px;
+        margin-left: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+.auth-container{
+    width: 400px;
+    margin:30px auto 0 auto;
+    padding: 25px 30px 75px 30px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 7px 7px 7px 3px rgba(0,0,0,0.5);  
+    .psw-question{
+        margin-top: 30px;
+        text-align: center; 
+        font-size: 16px;            
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    p {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: lowercase;
+        margin: 5px 0 35px 0;
+    }
+    .auth-form {
+        display: flex;
+        flex-direction: column;       
+        .input-fied{
+            height:51px;  
+            position: relative;     
+            input[type=text],
+            input[type=email],
+            input[type=password]{
+                width: 100%;
+                padding: 10px 10px 3px 25px;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid black
+            }
+            input[type=submit]{
+                font-size: 16px;
+                width: 100%;
+                margin-top: 30px;
+                padding: 10px;
+                margin-bottom: 5px;
+                background-color: transparent;
+                outline: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+                border: 2px solid black;
+                box-shadow: 3px 2px 5px 0px #002141;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: green;
+                    border: 2px solid green;
+                }
+            }
+            .errors{
+                text-align: center;
+                font-size: 14px;
+                color: red;           
+            } 
+            .toggleVisibal {
+                position: relative;
+                .iconVisibility{
+                    position: absolute;
+                    bottom:3px;
+                    right: 0px;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+            .checked{
+                position: absolute;
+                font-size: 17px;
+                color: green;
+                top: 3px;
+                left: 0;
+            }
+        }
+           
+    }
+}
+
+@media (max-width: 420px) {
+    .auth-container {
+        width: 95%;
+    }
+}

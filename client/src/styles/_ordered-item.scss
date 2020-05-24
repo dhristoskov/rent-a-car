@@ -1,0 +1,86 @@
+.order-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin-bottom: 55px;
+    .extras-btn {
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .ordered-car-item{
+        flex:1 1 50%;
+    }
+    .main-order-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-left: 1px solid black;
+        padding: 15px;
+        flex: 1 1 50%;
+        .total-price {
+            text-align: end;
+            font-size: 18px;
+            margin: 20px 0;
+            span {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .full-name {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .order-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+                margin-bottom: 5px;
+                font-size: 17px;
+            }
+        }
+        .off-message{
+            margin: auto 0 10px 0;
+            text-align: center;
+            font-size: 17px;
+        }
+        .buttons {           
+            display: flex;
+            justify-content: space-evenly;
+            .button-action{
+                flex-basis: 25%;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 600;
+                border: 1px solid black;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .order-card {
+        .main-order-wrapper {
+            border: none;
+            border-top: 1px solid black;
+            .off-message{
+                margin-top: 25px;
+            }
+            .buttons {           
+                .button-action{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

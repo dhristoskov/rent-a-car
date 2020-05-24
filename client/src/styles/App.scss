@@ -1,0 +1,86 @@
+@import './global';
+@import './auth-form';
+@import './main-header';
+@import './sideBar';
+@import './modal';
+@import './backdrop';
+@import './auth-button';
+@import './loader';
+@import './auth-header';
+@import './fleet-list';
+@import './car-item';
+@import './main-home';
+@import './layout';
+@import './car-info-card';
+@import './search-form';
+@import './main-auth-page';
+@import './pagination';
+@import './rent-page';
+@import './delete-warning';
+@import './ordered-item';
+
+.extras-wrapper {
+    width: 650px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .extras-option{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+        width: 45%;
+        height: 220px;
+        border: 1px solid black;
+        margin:0 auto 10px auto; 
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+        } 
+        p{
+            margin: 15px 0;
+            text-align: start;
+            font-size: 18px;      
+        } 
+        .select {
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;  
+        }
+    }
+    :nth-child(even){
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .extras-wrapper {
+       width: 90%;
+       .extras-option{
+        width: 90%;
+       }
+    }
+}
+
+
+//Search buttons
+
+.sort-arrow{    
+    button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: 22px;
+        font-weight: 600;
+        span{
+            font-size: 15px;
+            margin-right:10px;
+        }
+    }
+}

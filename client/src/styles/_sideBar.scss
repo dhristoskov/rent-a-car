@@ -1,0 +1,32 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 20%;
+    left: 1%;
+    height: 50%;
+    padding: 30px 30px 30px 10px;
+    z-index: 10;
+    li {
+        list-style: none;
+        margin-bottom: 20px;
+        text-align: start;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 700;
+        & a{
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .sidebar {
+        padding: 15px 15px 15px 5px;
+    }
+}

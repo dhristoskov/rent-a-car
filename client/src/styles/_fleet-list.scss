@@ -1,0 +1,14 @@
+.list-autos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 950px;
+    margin: auto;
+}
+
+
+@media (max-width: 420px) {
+    .list-autos { 
+       width: 80%;
+    }
+}

@@ -1,0 +1,19 @@
+.auth-header {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: flex-start;
+    & p {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        & span {
+            margin-right: 1px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .auth-header {
+        justify-content: center;
+    }
+}

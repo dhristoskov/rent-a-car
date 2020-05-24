@@ -1,0 +1,18 @@
+.modal-wrapper {
+    position: fixed;
+    z-index: 50;
+    background-color: white;
+    width: 30%;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+    padding: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 420px) {
+    .modal-wrapper { 
+       width: 80%;
+    }
+}
