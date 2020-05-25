@@ -1,5 +1,6 @@
 export const ValidateEmail = RegExp(/^\S+@\S+\.\S+$/);
 
+//Input validation
 export const  ValidateInput = (name, value) => {
 
         let errors = {
