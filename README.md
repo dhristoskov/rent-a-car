@@ -11,6 +11,7 @@
 	* reset password
 	* reset e-mail with generated token valid 1h
 	* client side validation
+	* backend side validation (Express - validator)
 	* rent a car 
 	* search by name, model, type
 	* sort by price
@@ -19,3 +20,4 @@
 	* pay later
 	* PDF invoice
 	* confirmation e-mail (invoice e-mail)
+
