@@ -1,6 +1,6 @@
  rent-a-car-single page app
  # Rent a Car <h1>
- Single Page Application
+ ### Single Page Application <h3>
 
  React, Node, MongoDB, Express - MERN
 
