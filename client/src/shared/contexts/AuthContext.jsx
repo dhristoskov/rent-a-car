@@ -1,5 +1,6 @@
 import React, { createContext, useState, useCallback, useEffect } from 'react';
 
+//Authentication context 
 export const AuthContext = createContext({
     isLoggedIn: false,
     userId: null,
