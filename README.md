@@ -1,6 +1,6 @@
 # rent-a-car
- #Rent a Car<h1>tag 
- ###Single Page Application
+ # Rent a Car <h1>tag 
+ Single Page Application
 
  React, Node, MongoDB, Express - MERN
 
