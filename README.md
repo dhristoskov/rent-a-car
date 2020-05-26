@@ -4,13 +4,6 @@
 
  React, Node, MongoDB, Express - MERN
 
- ![landing_page](img/landing.jpg)
- ![fleet_1](img/cars_1.jpg)
- ![fleet_2](img/cars_2.jpg)
- ![login](img/login.jpg)
- ![order_form](img/order_form.jpg)
- ![order](img/order.jpg)
-
 	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
 	* log-in
@@ -29,3 +22,32 @@
 	* confirmation e-mail (invoice e-mail)
 	* simple gsap animation
 
+
+ ### Landing Page <h3>
+	* top 3 cars to rent
+	* 3 main category (sedan, coupe, SUV)
+ ![landing_page](img/landing.jpg)
+
+ ### Fleet Page <h3>
+	* search bar (search by model, name or type )
+	* sort by price
+ ![fleet_1](img/cars_1.jpg)
+
+### Fleet Page <h3>
+	* client side pagination
+ ![fleet_2](img/cars_2.jpg)
+
+### Auth Page <h3>
+	* login, register
+	* reset password, reset email
+ ![login](img/login.jpg)
+
+### Rent Page <h3>
+
+ ![order_form](img/order_form.jpg)
+
+### Auth Page <h3>
+	* pay now, pay later - changing the price if pay now (backend)
+	* Invoice Email on Checkout
+	* PDF Invoice
+ ![order](img/order.jpg)
