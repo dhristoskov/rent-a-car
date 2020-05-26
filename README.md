@@ -3,6 +3,8 @@
  ### Single Page Application <h3>
 
  React, Node, MongoDB, Express - MERN
+ 
+ ![landing_page](img/landing.jpg)
 
 	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
