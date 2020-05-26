@@ -47,7 +47,10 @@
  ![order_form](img/order_form.jpg)
 
 ### Auth Page <h3>
+	* Delete Order
 	* pay now, pay later - changing the price if pay now (backend)
 	* Invoice Email on Checkout
 	* PDF Invoice
  ![order](img/order.jpg)
+
+All calculations or changes in price or product are made in backend
