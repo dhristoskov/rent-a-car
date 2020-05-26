@@ -20,7 +20,7 @@
 	* pay later
 	* PDF invoice
 	* confirmation e-mail (invoice e-mail)
-	* simple gsap animation
+	* simple gsap animation for all pages
 
 
  ### Landing Page <h3>
