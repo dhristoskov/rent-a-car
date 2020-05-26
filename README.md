@@ -5,8 +5,8 @@
  React, Node, MongoDB, Express - MERN
 
  ![landing_page](img/landing.jpg)
- ![fleet_1](img/car_1.jpg)
- ![fleet_2](img/car_2.jpg)
+ ![fleet_1](img/cars_1.jpg)
+ ![fleet_2](img/cars_2.jpg)
 
 	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
