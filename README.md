@@ -7,6 +7,9 @@
  ![landing_page](img/landing.jpg)
  ![fleet_1](img/cars_1.jpg)
  ![fleet_2](img/cars_2.jpg)
+ ![login](img/login.jpg)
+ ![order_form](img/order_form.jpg)
+ ![order](img/order.jpg)
 
 	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
