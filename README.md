@@ -4,7 +4,7 @@
 
  React, Node, MongoDB, Express - MERN
 
-	* top 3 offerse (landing page)
+	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
 	* log-in
 	* register
@@ -20,4 +20,5 @@
 	* pay later
 	* PDF invoice
 	* confirmation e-mail (invoice e-mail)
+	* simple gsap animation
 
