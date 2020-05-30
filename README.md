@@ -20,7 +20,7 @@
 	* pay later
 	* PDF invoice
 	* confirmation e-mail (invoice e-mail)
-	* simple gsap animation for all pages
+	* simple gsap - "GreenSock" - animation
 
 
  ### Landing Page <h3>
