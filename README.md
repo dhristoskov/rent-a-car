@@ -20,17 +20,17 @@
 	* pay later
 	* PDF invoice
 	* confirmation e-mail (invoice e-mail)
-	* simple gsap animation for all pages
+	* simple gsap - "GreenSock" - animation
 
 
  ### Landing Page <h3>
 	* top 3 cars to rent
-	* 3 main category (sedan, coupe, SUV)
+	* 3 main category(sedan, coupe, SUV)
  ![landing_page](img/landing.jpg)
 
  ### Fleet Page <h3>
-	* search bar (search by model, name or type )
-	* sort by price
+	* search bar to search ( by model, name or type )
+	* sort the fleet by price
  ![fleet_1](img/cars_1.jpg)
 
 ### Fleet Page <h3>
