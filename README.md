@@ -2,7 +2,7 @@
  # Rent a Car <h1>
  ### Single Page Application <h3>
 
- React, Node, MongoDB, Express - MERN
+ React, Node, MongoDB, Express - MERN Stack - "Rant-a-car Single Page App"
 
 	* top 3 offers (landing page)
 	* 3 main types subcategory (landing page)
