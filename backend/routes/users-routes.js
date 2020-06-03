@@ -9,24 +9,24 @@ router.post('/register',
     [
         check('name', 'Please provide a name').not().isEmpty().isLength({ min: 4 }).trim(),
         check('email', 'Please provide an email').isEmail().not().isEmpty().isLength({ min: 6 }).normalizeEmail(),
-        check('password', 'Password at least 6 character long').isLength({ min: 6 }).trim()
+        check('password', 'Password must be at least 6 character long').isLength({ min: 6 }).trim()
     ],
     usersController.registerUser
 );
 
-//Login a user
+//Login user
 router.post('/login',
     [
         check('email', 'Please provide an email').isEmail().not().isEmpty().isLength({ min: 6 }).normalizeEmail(),
-        check('password', 'Password at least 6 character long').isLength({ min: 6 }).trim()
+        check('password', 'Password must be at least 6 character long').isLength({ min: 6 }).trim()
     ],
     usersController.loginUser
 );
 
-//Change user password
+//Change user's password
 router.post('/update',
     [
-        check('password', 'Password at least 6 character long').isLength({ min: 6 }).trim()
+        check('password', 'Password must be at least 6 character long').isLength({ min: 6 }).trim()
     ], 
     usersController.updateUserPassword
 );
